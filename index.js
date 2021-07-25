@@ -84,7 +84,7 @@
                 table.appendRows(tableData);                
                     doneCallback();
                 },"error": function(req,status,error){
-                    var message = "Error during getData phase, using access token:" + auth.accessToken + " - " + error;
+                    var message = "Error during getData phase, using access token:" + accessToken + " - " + error;
                     log(message,true);
                 }
             });
